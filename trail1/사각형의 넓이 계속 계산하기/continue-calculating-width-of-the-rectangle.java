@@ -10,11 +10,11 @@ public class Main {
             String[] lines = br.readLine().split(" ");
             int a = Integer.parseInt(lines[0]);
             int b = Integer.parseInt(lines[1]);
-            String c = lines[2];
+            char c = lines[2].charAt(0);
 
             System.out.println(a * b);
 
-            if (c.equals("C")){
+            if (c == 'C'){
                 break;
             }
         }
