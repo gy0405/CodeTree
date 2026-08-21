@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
 
-    public static int[] arr = new int[100];
+    public static int[] arr;
 
     public static void printSum(int a1, int a2){
         int sum = 0;
@@ -15,6 +15,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
+
+        arr = new int[n];
+        
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
