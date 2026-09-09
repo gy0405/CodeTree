@@ -18,12 +18,7 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
 
-        //검은색 배열
-        //흰색 배열
-        //순서도 생각해야함... > 덮어 씌우는 방식으로 하고 cnt를 세서 회색으로 만들자
-        //일반 배열 하나 (-1 검정, 1 흰색) + cnt 배열 하나 (검정횟수와 흰색 횟수를 카운트)
-        // 차라리 클래스를 새로 만들어서 그 클래스 배열을 넣을까..
-        Tile[] line = new Tile[2000010];
+        Tile[] line = new Tile[200010];
 
         for (int i = 0; i < line.length; i++) {
             line[i] = new Tile(); 
