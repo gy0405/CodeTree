@@ -14,21 +14,15 @@ public class Main {
 
         for(int i = 0; i < arr.length; i++){
             if(i == 0){
-                continue;
             }
             else if (arr[i] > arr[i-1]){
                 cnt++;
             }
             else{
-                if (max < cnt){
-                    max = cnt;
-                }
                 cnt = 1;
             }
-        }
 
-        if (max < cnt){
-            max = cnt;
+            max = Math.max(max, cnt);
         }
 
         System.out.print(max);
