@@ -12,8 +12,7 @@ public class Main {
 
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        int timeA = 0;
-        int timeB = 0;
+
         int idxA = 1;
         int idxB = 1;
         
@@ -21,7 +20,6 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             int t = Integer.parseInt(st.nextToken());
             char d = st.nextToken().charAt(0);
-            timeA += t;
 
             while(t-- > 0){
                 if(d == 'R'){
@@ -39,7 +37,6 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             int t = Integer.parseInt(st.nextToken());
             char d = st.nextToken().charAt(0);
-            timeB += t;
 
             while(t-- >0){
                 if(d == 'R'){
